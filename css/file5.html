@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>images</title> 
+  </head>
+  <body>
+  <h1>my first javascript</h1>
+  <p>this is images of two</p>
+  
+   <img id="myImage" src="C:\Users\USER\Documents\html\images\img.jpg" width="100" height="180" />
+   
+   <p>
+    <button type="button" onclick="images(1)">image 1</button>
+    <button type="button" onclick="images(0)">image 2</button>
+  </p>
+<script>
+   function images(im) {
+   var image;
+   if(im==0) {
+   image= "C:\Users\USER\Documents\html\images\img.jpg"
+   }
+   else{
+   image= "C:\Users\USER\Documents\html\images\lake.jpg"
+   }
+    document.getElementById('myImage').src = image;
+   }
+
+ </script>
+ </body>
+</html>
+ 
+
+
+
+   
+   
+  

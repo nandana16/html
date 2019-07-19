@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>images</title> 
+  </head>
+  <body>
+  
+   <img id="myImage" src="C:\Users\USER\Documents\html\images\img.jpg" width="100" height="180">
+
+   <p>
+    <button type="button" onclick="abc(1)">image 1</button>
+    <button type="button" onclick="abc(0)">image 2</button>
+  </p>
+<script>
+   function abc(im) {
+   var image;
+   if(im == 0) {
+   image= "https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
+   }
+   else{
+   image= "https://content.phuket101.net/wp-content/uploads/20181015165943/phuket-best-beaches-1200x630.jpg";
+   }
+    document.getElementById('myImage').src = image;
+   }
+
+ </script>
+ </body>
+</html>
+ 
+
+
+
+   
+   
+  

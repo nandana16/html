@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+<title>my task</title>
+<head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+		integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<style>
+		body {
+			font-family: 'Arial, Helvetica, sans-serif';
+			max-width: 100%;
+			overflow-x: hidden;
+			margin: 0 !important;
+		}
+
+		.main-div1 {
+			position: relative;
+			background-color: white;
+			padding: 10px 0px;
+			overflow: hidden;
+			color: pink;
+			width: 100%;
+		}
+
+		.main-div1 a {
+			float: right;
+			color: rgb(4, 121, 4);
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 25px;
+			display: inline-block;
+		}
+
+		.logo {
+			background-image: url ("../mylogo.png");
+			margin: 5px;
+			min-width: 10px;
+			min-height: 10px;
+			float: left;
+			padding: 0 10px 0 40px;
+		}
+
+		.exe a {
+			float: left;
+			color: rgb(4, 121, 4);
+			text-align: center;
+			padding: 5px 0px;
+			font-size: 35px;
+			display: inline-block;
+		}
+
+		.mainbg {
+			width: 100%;
+			height: 700px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			min-height: 300px;
+			background-image: url("../images/itb.jpg");
+			margin: auto;
+		}
+
+		.mylogo {
+			background-image: url ("../mylogo.png");
+			padding: 60px 0 0 295px;
+			margin: auto;
+			min-width: 50px;
+			min-height: 20px;
+		}
+
+		.mainbg .btn {
+			position: absolute;
+			top: 80%;
+			left: 20%;
+			background-color: rgb(211, 198, 22);
+			color: white;
+			font-size: 26px;
+			padding: 10px 40px;
+			border: none;
+			cursor: pointer;
+			border-radius: 20px;
+			text-align: center;
+			margin: auto;
+		}
+
+		.mainbg .btn:hover {
+			background-color: white;
+			color: rgb(211, 198, 22);
+		}
+
+		.mainbg .container {
+			position: relative;
+			text-align: center;
+			color: rgb(89, 228, 238);
+		}
+
+		.mainbg .top-left {
+			position: absolute;
+			top: 40%;
+			left: 18%;
+			color: white;
+			font-size: 20px;
+			text-align: center;
+		}
+
+		.main-div2 {
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+			background-color: white;
+			padding: 80px;
+			height: 20%;
+		}
+
+		.div2-sub1 {
+			width: 50%;
+			float: left;
+			align-content: center;
+			padding-left: 30px;
+		}
+
+		.div2-sub2 {
+			width: 40%;
+			float: left;
+			padding-left: 60px;
+			color: grey;
+			background-color: white;
+			overflow: hidden;
+			text-align: left;
+		}
+
+		.div2-sub2 h1 {
+			color: darkblue;
+		}
+
+		.div2-sub2 h2 {
+			color: teal;
+		}
+
+		.main-div2 vl {
+			border-left: 1px solid rgb(221, 214, 214);
+			height: 500px;
+			position: absolute;
+			left: 50%;
+			margin-left: -3px;
+			top: 0;
+			/* opacity: 0.5; */
+		}
+
+		.main-div3 {
+			position: relative;
+			overflow: hidden;
+			background-color: #50b0e0;
+			width: 100%;
+			padding: 20px 10px 150px 0px;
+			color: white;
+		}
+
+		.div3-sub1 {
+			width: 100%;
+			text-align: center;
+			font-size: 23px;
+			padding: 20px 0 20px 0;
+		}
+
+		.div3-sub2 {
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+			padding: 10px;
+			text-align: center;
+		}
+
+		.div3-sub2-sub1,
+		.div3-sub2-sub2,
+		.div3-sub2-sub3,
+		.div3-sub2-sub4,
+		.div3-sub2-sub5 {
+			float: left;
+			width: 20%;
+			text-align: center;
+		}
+
+		.main-div4 {
+			position: relative;
+			overflow: hidden;
+			background-color: white;
+			width: 100%;
+			padding: 50PX 0px;
+			text-decoration: none;
+		}
+
+		.main-div4 h1 {
+			color: darkslateblue;
+		}
+
+		.div4-sub1 {
+			width: 50%;
+			float: left;
+			padding-left: 30px;
+			text-decoration: none;
+			overflow: hidden;
+			color: grey;
+		}
+
+		.div4-sub2 {
+			width: 40%;
+			float: right;
+			padding: 50px 25px;
+		}
+
+		.main-div5 {
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+			background-color: #e6b800;
+			padding: 45px 0px;
+			color: white;
+		}
+
+		.div5-sub1 {
+			width: 40%;
+			float: left;
+			padding-left: 30px;
+			text-decoration: none;
+			overflow: hidden;
+		}
+
+		.div5-sub2 {
+			width: 50%;
+			float: right;
+			padding-top: 40px;
+		}
+
+		.main-div6 {
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+			background-color: white;
+			padding: 50px 0px;
+			text-decoration: none;
+		}
+
+		.main-div6 h1 {
+			color: darkslateblue;
+		}
+
+		.div6-sub1 {
+			align-content: center;
+			width: 50%;
+			float: left;
+			padding: 50px 0px 0px 30px;
+		}
+
+		.div6-sub2 {
+			position: relative;
+			overflow: hidden;
+			width: 40%;
+			color: grey;
+			padding: 10px;
+			text-decoration: none;
+		}
+
+		.main-card {
+			text-align: left;
+			font-size: 45px;
+			color: #205379;
+			padding-left: 57px;
+		}
+
+		.main-card1 {
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+			padding: 10px 5px;
+			text-decoration: none;
+			color: darkblue;
+			box-sizing: border-box;
+			margin: 25px 55px;
+			background-color: white;
+		}
+
+		.moodle {
+			margin: 5px;
+			width: 10px;
+			float: left;
+			padding-left: 30px;
+			border-radius: 100px;
+		}
+
+		.card1-sub1,
+		.card1-sub2,
+		.card1-sub3 {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			text-align: center;
+			float: left;
+			width: 28%;
+			background-color: white;
+			margin-right: 2%;
+			padding: 20px 16px;
+		}
+
+		.main-card1 h2 {
+			text-align: right;
+			color: #205379;
+			font-size: 17px;
+		}
+
+		.main-card1 h1 {
+			color: #205379;
+			text-align: left;
+			margin: auto;
+			padding: 0px 100px;
+		}
+
+		.main-card1 h3 {
+			color: black;
+			padding: 0px 100px;
+			margin: auto;
+		}
+
+		.main-card1 h4 {
+			color: black;
+			text-align: left;
+			padding-bottom: 20px;
+		}
+
+		.main-card1 p {
+			color: grey;
+			text-align: left;
+			padding-bottom: 10px;
+		}
+
+		.main-div7 {
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+			background-color: darkslategray;
+			padding-bottom: 30px;
+			padding-top: 50px;
+			padding-right: 0px;
+			text-decoration: none;
+			color: lemonchiffon;
+			height: 200px;
+			text-align: center;
+		}
+
+		.div7-sub1 {
+			width: 25%;
+			float: left;
+			text-align: center;
+			padding-top: 40px;
+		}
+
+		.div7-sub2 {
+			width: 25%;
+			float: left;
+			text-align: left;
+		}
+
+		.div7-sub3 {
+			width: 25%;
+			float: left;
+			text-align: left;
+		}
+
+		.div7-sub4 {
+			width: 25%;
+			float: left;
+			text-align: left;
+		}
+
+		.main-div7 hr {
+			display: block;
+			margin: 80px 40px 5px 140px;
+			border-style: inset;
+			border-width: 0.5px;
+			border-color: rgb(107, 104, 124);
+		}
+
+		h5.space {
+			word-spacing: 50px;
+			float: right;
+			padding-right: 60px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="main-div1">
+		<div class="logo">
+			<img src="C:\Users\USER\Documents\html\images\mylogo.png" alt="lock" class="rounded" width="45px"
+			 height="45px">
+		</div>
+		<div class="exe">
+			<a class=" nav-item nav-link" href="#">Examlock</a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<a class="nav-item nav-link" href="#">About</a>
+			<a class="nav-item nav-link" href="#">Integration</a>
+			<a class="nav-item nav-link" href="#">Windows</a>
+			<a class="nav-item nav-link" href="#">MacOS</a>
+			<a class="nav-item nav-link" href="#">Linux</a>
+			<a class="nav-item nav-link" href="#">Support</a>
+			<a class="nav-item nav-link" href="#">Login</a>
+		</div>
+	</div>
+	<div class="mainbg">
+		<button class="btn">click here</button>
+		<div class="top-left">
+			<h1>Safe,Secure<br>and Advanced</h1>
+		    <h3>Futute of advanced testing</h3>
+		</div>
+		<div class="mylogo">
+			<img src="C:\Users\USER\Documents\html\images\mylogo.png" alt="lock" class="rounded" width="140px"
+			 height="140px">
+		</div>
+	</div>
+	<div class="main-div2">
+		<div class="div2-sub1">
+			<img src="C:\Users\USER\Documents\html\images\lockk.jpg" class="rounded" alt="salt lake">
+		</div>
+		<vl />
+		<div class="div2-sub2">
+			<h1>Overview</h1>
+			<h2>Examlock secures and protects your investment, time and integrity</h2>
+			<p>exam lock was created to meet the security demands of online testimg and maintaining test integrity of
+				our clients with a multitude of security measures and checks,Examlock has designed features and
+				algorithms to detect and deter cheating and item theft</p>
+			<p>By analyzing,restricting,and moniotring several actions during the users session,Examlock protects the
+				questions and contents of the test from being copied,altered or reused by outside hackers.</p>
+		</div>
+	</div>
+	<div class="main-div3">
+		<div class="div3-sub1">
+			<h1>Features</h1>
+		</div>
+		<div class="div3-sub2">
+			<div class="div3-sub2-sub1">
+				<i class="fas fa-crop" style="font-size:74px;"></i>
+				<h2>Screenshots<br> Review</h2>
+				<h4>Protect your browser with passcode...<br>There are several ways to protect the saved 				passcodesfrom being seen by intrudewrs
+				</h4>
+			</div>
+			<div class="div3-sub2-sub2">
+				<i class="fas fa-business-time" style="font-size:74px;"></i>
+				<h2>Navigation<br> Lock</h2>
+				<h4>Protect your browser with passcode...<br> There are several ways to protect the saved 				passcodesfrom being seen by intrudewrs</h4>
+			</div>
+			<div class="div3-sub2-sub3">
+				<i class="fas fa-map-marker-alt" style="font-size:74px;"></i>
+				<h2>Geo<br> Location, IP</h2>
+				<h4>Protect your browser with passcode...<br>There are several ways to protect the saved 				passcodesfro being seen by intrudewrs</h4>	
+			</div>
+			<div class="div3-sub2-sub4">
+				<i class="fas fa-bars" style="font-size:74px;"></i>
+				<h2>Key Stroke<br> Logging</h2>
+				<h4>Protect your browser with passcode...<br>There are several ways to protect the saved 				passcodesfrom being seen by intrudewrs</h4>
+			</div>
+			<div class="div3-sub2-sub5">
+				<i class="fas fa-lock" style="font-size:74px;"></i>
+				<h2>Browser<br> Blocking</h2>
+				<h4>Protect your browser with passcode...<br>There are several ways to protect the saved 				passcodesfrom being seen by intrudewrs</h4>	
+			</div>
+		</div>
+	</div>
+	<div class="main-div4">
+		<div class="div4-sub1">
+			<h1>ExamLock's Content safety features </h1><br>
+			<h2>Restricts screen capturing</h2>
+			<h2>Restricts printing capability</h2>
+			<h2>Restricts tampering with webcams</h2>
+			<h2>Disables functions that allow saving or copying questions/content</h2>
+			<h2>Specially designed algorithms to track temp files and background applications</h2>
+		</div>
+		<div class="div4-sub2">
+			<img src="C:\Users\USER\Documents\html\images\fea.png" class="rounded" alt="salt lake">
+		</div>
+	</div>
+	<div class="main-div5">
+		<div class="div5-sub1">
+			<h1>ExamLock has been programmed to detect,and block, the following:</h1><br>
+			<h3>RTC</h3>
+			<h3>WebRtc</h3>
+			<h3>IRC</h3>
+			<h3>VoIP</h3>
+			<h3>RTP</h3>
+			<h3>Robotic</h3>
+			<h3>telepresence</h3>
+		</div>
+		<div class="div5-sub2">
+			<img src="C:\Users\USER\Documents\html\images\block2.jpg" class="rounded" alt="salt lake">
+		</div>
+	</div>
+	<div class="main-div6">
+		<div class="div6-sub1">
+			<img src="C:\Users\USER\Documents\html\images\part.jpg" class="rounded" alt="salt lake" width="600px"
+			 height="400px">
+		</div>
+		<div class="div6-sub2">
+			<h1>Partners</h1><br>
+			<h2>ExamRoom.ai leverages the flexibility of further streamline integration process with allMS 				platforms and learning applications.</h2>
+			<h2>The LTI standard provides a single framework for administrations and developers to integrate 			their LMS with ExamRoom.ai procroring and security features.</h2>
+			<h2>Below is a list of LMS platforms we have partnered with,as well as continously adding to:</h2>
+		</div>
+	</div>
+	<div class="main-card">
+		<p>Our Partners</p>
+	</div>
+	<div class="main-card1">
+		<div class="card1-sub1">
+			<div class="moodle">
+				<img src="C:\Users\USER\Documents\html\images\moodle.png" class="rounded" alt="logo" width="55px"
+				 height="55px">
+			</div>
+			<h1>Moodle</h1>
+			<h3>West perth Australia</h3><br>
+			<h4>capabilities</h4>
+			<p>Moodle is a free and open-source learning managemant system written in php and distributed under the 	GNU general public License</p>
+			<h2>MORE...</h2>
+		</div>
+		<div class="card1-sub2">
+			<div class="moodle">
+				<img src="C:\Users\USER\Documents\html\images\moodle.png" class="rounded" alt="logo" width="55px"
+				 height="55px">
+			</div>
+			<h1>Docebo</h1>
+			<h3>West perth Australia</h3><br>
+			<h4>capabilities</h4>
+			<p>Docebo is a software as a service platform for elearning,also know as a learning management
+				system.Established in 2005.Docebo offers a learning.</p>
+			<h2>MORE...</h2>
+		</div>
+		<div class="card1-sub3">
+			<div class="moodle">
+				<img src="C:\Users\USER\Documents\html\images\moodle.png" class="rounded" alt="logo" width="55px"
+				 height="55px">
+			</div>
+			<h1>Exam soft</h1>
+			<h3>West perth Australia</h3><br>
+			<h4>capabilities</h4>
+			<p>moodle is a free open-source learning management written in php and distributed under the GNU general
+				public licence established in 2005.Docebo offers</p>
+			<h2>MORE...</h2>
+		</div>
+	</div>
+	<div class="main-card1">
+		<div class="card1-sub1">
+			<div class="moodle">
+				<img src="C:\Users\USER\Documents\html\images\moodle.png" class="rounded" alt="logo" width="55px"
+				 height="55px">
+			</div>
+			<h1>Moodle</h1>
+			<h3>West perth Australia</h3><br>
+			<h4>capabilities</h4>
+			<p>Moodle is a free and open-source learning managemant system written in php and distributed under
+				the GNU general public License</p>
+			<h2>MORE...</h2>
+		</div>
+		<div class="card1-sub2">
+			<div class="moodle">
+				<img src="C:\Users\USER\Documents\html\images\moodle.png" class="rounded" alt="logo" width="55px"
+				 height="55px">
+			</div>
+			<h1>Docebo</h1>
+			<h3>West perth Australia</h3><br>
+			<h4>capabilities</h4>
+			<p>Docebo is a software as a service platform for elearning,also know as learning management
+				system.Established in 2005.Docebo offers a learning</p>
+			<h2>MORE...</h2>
+		</div>
+		<div class="card1-sub3">
+			<div class="moodle">
+				<img src="C:\Users\USER\Documents\html\images\moodle.png" class="rounded" alt="logo" width="55px"
+				 height="55px">
+			</div>
+			<h1>Exam soft</h1>
+			<h3>West perth Australia</h3><br>
+			<h4>capabilities</h4>
+			<p>moodle is a free open-source learning management written in php and distributed under the GNU general
+				public licence...established in 2005.Docebo offers</p>
+			<h2>MORE...</h2>
+		</div>
+	</div>
+	<div class="main-card1">
+		<div class="card1-sub1">
+			<div class="moodle">
+				<img src="C:\Users\USER\Documents\html\images\moodle.png" class="rounded" alt="logo" width="55px"
+				 height="55px">
+			</div>
+			<h1>Moodle</h1>
+			<h3>West perth Australia</h3><br>
+			<h4>capabilities</h4>
+			<p>Moodle is a free and open-source learning managemant system written in php and distributed under
+				the GNU general public License</p>
+			<h2>MORE...</h2>
+		</div>
+		<div class="card1-sub2">
+			<div class="moodle">
+				<img src="C:\Users\USER\Documents\html\images\moodle.png" class="rounded" alt="logo" width="55px"
+				 height="55px">
+			</div>
+			<h1>Docebo</h1>
+			<h3>West perth Australia</h3><br>
+			<h4>capabilities</h4>
+			<p>Docebo is a software as a service platform for elearning,also know as a learning management
+				system.Established in 2005.Docebo offers a learning</p>
+			<h2>MORE...</h2>
+		</div>
+		<div class="card1-sub3">
+			<div class="moodle">
+				<img src="C:\Users\USER\Documents\html\images\moodle.png" class="rounded" alt="logo" width="55px"
+				 height="55px">
+			</div>
+			<h1>Exam soft</h1>
+			<h3>West perth Australia</h3><br>
+			<h4>capabilities</h4>
+			<p>moodle is a free open-source learning management written in php and distributed under the GNU general
+				public licence...established in 2005.Docebo offer</p>
+			<h2>MORE...</h2>
+		</div>
+	</div>
+	<div class="main-div7">
+		<div class="div7-sub1">
+			<h2>Contact Us</h2>
+		</div>
+		<div class="div7-sub2">
+			<h5>Utah HeadQuaters-prov,inc,<br><br>5536 south 2345 west,<br><br>suite200,sandy.<br><br>ultah 23536.
+			</h5>
+		</div>
+		<div class="div7-sub3">
+			<h5>Mumbai Headquaters-prov,inc,<br><br>3rd floor workbusiness suite,<br><br>pagoda fort 2345.</h5>
+		</div>
+		<div class="div7-sub4">
+			<h5>banglore Headquaters-prov,inc<br><br>3rd floor workbusiness suite,<br>
+				<br>pagoda fort	2345,<br><br>whitefield-banglore.
+			</h5>
+		</div>
+		<hr>
+		<h5 class="space">Trademark News Privacy Accessibility publicity profile business</h5>
+	</div>
+</body>
+
+</html>
